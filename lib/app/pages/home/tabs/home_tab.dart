@@ -89,11 +89,18 @@ class HomeTab extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  HomeTodaysButton(Icons.directions_walk, "STEPS", "1,228"),
-                  SizedBox(width: 5),
-                  HomeTodaysButton(Icons.offline_bolt, "CALORIES", "829"),
-                  SizedBox(width: 5),
-                  HomeTodaysButton(Icons.favorite, "BPM", "88,9")
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeTodaysButton(Icons.directions_walk, "STEPS", "1,228"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeTodaysButton(Icons.offline_bolt, "CALORIES", "829"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeTodaysButton(Icons.favorite, "BPM", "88,9")
+                  ),
                 ],
               ),
             ),
@@ -131,19 +138,34 @@ class HomeTab extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  HomeDailyButton("08", "MON"),
-                  SizedBox(width: 5),
-                  HomeDailyButton("07", "SUN"),
-                  SizedBox(width: 5),
-                  HomeDailyButton("06", "SAT"),
-                  SizedBox(width: 5),
-                  HomeDailyButton("05", "FRI"),
-                  SizedBox(width: 5),
-                  HomeDailyButton("04", "THU"),
-                  SizedBox(width: 5),
-                  HomeDailyButton("03", "WED"),
-                  SizedBox(width: 5),
-                  HomeDailyButton("02", "TUE"),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("08", "MON"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("07", "SUN"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("06", "SAT"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("05", "FRI"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("04", "THU"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("03", "WED"),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(5),
+                    child: HomeDailyButton("02", "TUE"),
+                  ),
                 ],
               ),
             ),

@@ -117,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
                               onTap: () { login(); },
                               child: Center(
                                 child: Text(
-                                  "Email",
+                                  "LOGIN",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold

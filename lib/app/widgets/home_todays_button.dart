@@ -15,12 +15,12 @@ class HomeTodaysButton extends StatelessWidget {
       width: 120,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5.0),
-          color: Colors.white,
+          color: Color(getColorHexFromStr("#EFF3FF")),
           boxShadow: [
             BoxShadow(
               color: Colors.black12,
-              offset: Offset(0.0, 1.0), //(x,y)
-              blurRadius: 15.0,
+              offset: Offset(2.0, 1.0), //(x,y)
+              blurRadius: 5.0,
             ),
           ],
       ),

@@ -6,7 +6,9 @@ class ActivityTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
+      backgroundColor: Color(getColorHexFromStr("#EFF3FF")),
       navigationBar: CupertinoNavigationBar(
+        backgroundColor: Color(getColorHexFromStr("#EFF3FF")),
         leading: Icon(Icons.arrow_back),
         middle: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -60,68 +62,6 @@ class ActivityTab extends StatelessWidget {
               ),
         ],
       ),
-      // child: SingleChildScrollView(
-      //   child: Container(
-      //     color: Color(getColorHexFromStr("#EFF3FF")),
-      //     child: Column(
-      //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      //       children: [
-              // Container(
-              //   padding: EdgeInsets.only(top: 30, bottom: 30, left: 20),
-                // child: Row(
-                //   mainAxisAlignment: MainAxisAlignment.start,
-                //   children: [
-                //     Icon(Icons.arrow_back),
-                //     SizedBox(width: 30),
-                //     Text(
-                //       "Start ", 
-                //       style: TextStyle(
-                //         fontSize: 26,
-                //         color: Colors.black,
-                //         fontWeight: FontWeight.bold,
-                //         decoration: TextDecoration.none
-                //       ),
-                //     ),
-                //     Text(
-                //       "Activity", 
-                //       style: TextStyle(
-                //         fontSize: 26,
-                //         color: Color(getColorHexFromStr("#5868E0")),
-                //         fontWeight: FontWeight.bold,
-                //         decoration: TextDecoration.none
-                //       ),
-                //     )    
-                //   ],
-                // ),
-              // ),
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //   children: [
-              //     ActivityButton(Icons.directions_walk, "Walking"),
-              //     ActivityButton(Icons.directions_bike, "Tradmill")
-              //   ],
-              // ),
-              // SizedBox(height: 15),
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //   children: [
-              //     ActivityButton(Icons.directions_run, "Running"),
-              //     ActivityButton(Icons.directions_bike, "Cycling")
-              //   ],
-              // ),
-              // SizedBox(height: 15),
-              // Row(
-              //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //   children: [
-              //     ActivityButton(Icons.store, "Gym"),
-              //     ActivityButton(Icons.healing, "Yoga")
-              //   ],
-              // ),
-      //         SizedBox(height: 20)
-      //       ],
-      //     ),
-      //   ),
-      // )
     );
   }
 }

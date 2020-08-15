@@ -11,15 +11,15 @@ final String day;
   Widget build(BuildContext context) {
     return Container(
       height: 60,
-      width: 120,
+      width: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(5.0),
-          color: Colors.white,
+          color: Color(getColorHexFromStr("#EFF3FF")),
           boxShadow: [
             BoxShadow(
               color: Colors.black12,
-              offset: Offset(0.0, 1.0), //(x,y)
-              blurRadius: 15.0,
+              offset: Offset(4.0, 1.0), //(x,y)
+              blurRadius: 5.0,
             ),
           ],
       ),
