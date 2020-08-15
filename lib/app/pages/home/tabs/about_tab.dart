@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:workout_app/app/widgets/activity_button.dart';
 
-class ActivityTab extends StatelessWidget {
+class AboutPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
@@ -14,7 +13,7 @@ class ActivityTab extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Text(
-              "Start ", 
+              "About ", 
               style: TextStyle(
                 fontSize: 24,
                 color: Colors.black,
@@ -23,7 +22,7 @@ class ActivityTab extends StatelessWidget {
               ),
             ),
             Text(
-              "Activity", 
+              "Me", 
               style: TextStyle(
                 fontSize: 24,
                 color: Color(getColorHexFromStr("#5868E0")),
@@ -34,36 +33,57 @@ class ActivityTab extends StatelessWidget {
           ],
         ),
       ),
-      child: ListView(
-        padding: EdgeInsets.only(top: 16, bottom: 16),
-        children: <Widget>[
-          Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ActivityButton(Icons.directions_walk, "Walking"),
-                  ActivityButton(Icons.directions_bike, "Tradmill")
-                ],
-              ),
-              SizedBox(height: 15),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ActivityButton(Icons.directions_run, "Running"),
-                  ActivityButton(Icons.directions_bike, "Cycling")
-                ],
-              ),
-              SizedBox(height: 15),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  ActivityButton(Icons.store, "Gym"),
-                  ActivityButton(Icons.healing, "Yoga")
-                ],
-              ),
-        ],
-      ),
+      child: Container(
+        padding: EdgeInsets.all(16),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            _buildLabel("Curso"),
+            SizedBox(height: 2),
+            _buildLabelResponse("Desenvolvimento de Aplicativos Móveis"),
+            SizedBox(height: 10),
+            _buildLabel("Graduação"),
+            SizedBox(height: 2),
+            _buildLabelResponse("Pós-graduação"),
+            SizedBox(height: 10),
+            _buildLabel("Aluno"),
+            SizedBox(height: 2),
+            _buildLabelResponse("Felipe Alexandre"),
+            SizedBox(height: 10),
+            _buildLabel("Url"),
+            SizedBox(height: 2),
+            _buildLabelResponse("https://github.com/thelifesnak3/cesarFlutter"),
+          ],
+        ),
+      )
     );
   }
+}
+
+Widget _buildLabel(String label) {
+  return Text(
+    label,
+    style: TextStyle(
+      fontSize: 16,
+      fontWeight: FontWeight.bold,
+      color: Colors.black,
+      decoration: TextDecoration.none,
+      letterSpacing: 2
+    ),
+  );
+}
+
+Widget _buildLabelResponse(String label) {
+  return Text(
+    label,
+    style: TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.normal,
+      color: Color(getColorHexFromStr("#5868E0")),
+      decoration: TextDecoration.none
+    ),
+  );
 }
 
 int getColorHexFromStr(String colorStr) {

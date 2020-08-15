@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:workout_app/app/pages/home/tabs/about_tab.dart';
 import 'package:workout_app/app/pages/home/tabs/activity_tab.dart';
 import 'package:workout_app/app/pages/home/tabs/home_tab.dart';
 
@@ -38,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             return ActivityTab();
             break;
           case 2:
-            return Container();
+            return AboutPage();
             break;
           default:
             return Container();

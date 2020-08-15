@@ -58,7 +58,10 @@ class _HomeBoxState extends State<HomeBox> {
               ]
             ),
             borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(80)
+              topLeft: Radius.circular(80),
+              topRight: Radius.circular(5),
+              bottomRight: Radius.circular(5),
+              bottomLeft: Radius.circular(5),
             )
           ),
           child: Column(

@@ -15,11 +15,11 @@ class AppModule extends  MainModule {
   @override
   List<Router> get routers => [
     Router('/',
-        child: (_, args) => LoginPage(),
-        transition: TransitionType.rightToLeftWithFade),
+      child: (_, args) => LoginPage(),
+      transition: TransitionType.rightToLeftWithFade),
     Router('/home',
-        child: (_, args) => HomePage(),
-        transition: TransitionType.rightToLeftWithFade)
+      child: (_, args) => HomePage(),
+      transition: TransitionType.rightToLeftWithFade),
   ];
 
   @override

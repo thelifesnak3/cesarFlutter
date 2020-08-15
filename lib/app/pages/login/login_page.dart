@@ -139,13 +139,13 @@ class _LoginPageState extends State<LoginPage> {
   
 
   Widget _buildLabel(String label) {
-  return Text(
-    label,
-    style: TextStyle(
-      color: Colors.grey
-    ),
-  );
-}
+    return Text(
+      label,
+      style: TextStyle(
+        color: Colors.grey
+      ),
+    );
+  }
 
   Widget _buildTextField(IconData icon, String hint, TextEditingController controller) {
     return TextFormField(
