@@ -36,6 +36,7 @@ class ActivityTab extends StatelessWidget {
         ),
       ),
       child: ListView(
+        padding: EdgeInsets.only(top: 16, bottom: 16),
         children: <Widget>[
           Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
